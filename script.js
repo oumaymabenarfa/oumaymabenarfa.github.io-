@@ -66,8 +66,6 @@ document.body.style.margin = '0';
     // Create the third section: Small  ball  Game
     const gameSection = document.createElement('div');
     gameSection.style.backgroundColor = 'black';
-    gameSection.style.padding = '5px';
-    gameSection.style.borderRadius = '5px';
 
     // Creating the horizontal image
     const gameImage = document.createElement('img');
