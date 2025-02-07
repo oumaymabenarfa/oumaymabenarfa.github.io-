@@ -22,10 +22,17 @@ noButton.addEventListener('click', () => {
     yesButton.addEventListener('click', () => {
         const mainContainer = document.createElement('div');
         mainContainer.style.display = 'flex';
+        mainContainer.style.justifyContent = 'center';
         mainContainer.style.flexDirection = 'column'; // Single column layout
         mainContainer.style.alignItems = 'center'; // Center align elements
         mainContainer.style.gap = '20px'; // Space between elements
         mainContainer.style.width = '100%';
+
+        document.body.style.display = 'flex';
+document.body.style.justifyContent = 'center';
+document.body.style.alignItems = 'center';
+document.body.style.height = '100vh';
+document.body.style.margin = '0';
 
     // Create the first section: Image
     const imageSection = document.createElement('div');
@@ -59,8 +66,8 @@ noButton.addEventListener('click', () => {
     // Create the third section: Small  ball  Game
     const gameSection = document.createElement('div');
     gameSection.style.backgroundColor = 'black';
-    gameSection.style.padding = '20px';
-    gameSection.style.borderRadius = '10px';
+    gameSection.style.padding = '5px';
+    gameSection.style.borderRadius = '5px';
 
     // Creating the horizontal image
     const gameImage = document.createElement('img');
