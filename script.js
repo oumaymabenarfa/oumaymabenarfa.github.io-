@@ -19,14 +19,13 @@ noButton.addEventListener('click', () => {
     
 });
 
-yesButton.addEventListener('click', () => {
-    // Get the main container or body element
-    const mainContainer = document.createElement('div');
-    mainContainer.style.display = 'grid';
-    mainContainer.style.gridTemplateColumns = '0.5fr 0.5fr'; // 2 columns
-    mainContainer.style.gridTemplateRows = '0.5fr 0.5fr';    // 2 rows
-    mainContainer.style.height = '90vh';               // Full viewport height
-    mainContainer.style.gap = '5px';                   // Space between grid items
+    yesButton.addEventListener('click', () => {
+        const mainContainer = document.createElement('div');
+        mainContainer.style.display = 'flex';
+        mainContainer.style.flexDirection = 'column'; // Single column layout
+        mainContainer.style.alignItems = 'center'; // Center align elements
+        mainContainer.style.gap = '20px'; // Space between elements
+        mainContainer.style.width = '100%';
 
     // Create the first section: Image
     const imageSection = document.createElement('div');
