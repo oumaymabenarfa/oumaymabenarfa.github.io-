@@ -67,13 +67,12 @@ noButton.addEventListener('click', () => {
     gameImage.src = 'Game_Image.png'; // Replace with your horizontal image path
     gameImage.alt = '404 Error Image';
     gameImage.style.width = '100%';  // Image width is more than its height
-    gameImage.style.height = 'auto';
-    gameImage.style.maxWidth = '800px'; // Set a maximum width to maintain its horizontal form
-    gameImage.style.marginBottom = '20px';
+    gameImage.style.height = '70%';
+    image.style.objectFit = 'cover';
     
     // Game title
     const gameTitle = document.createElement('h3');
-    gameTitle.innerText = 'Oops! Looks like you are lost. Try avoiding obstacles!';
+    gameTitle.innerText = 'Let us play a Game AJ . Try avoiding obstacles!';
     
     // Start button for the game
     const gameButton = document.createElement('button');
