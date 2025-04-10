@@ -179,7 +179,7 @@ document.body.style.margin = '0';
     
     // Update the score display
     function updateScore() {
-        ctx.fillStyle = 'black';
+        ctx.fillStyle = 'pink';
         ctx.font = '20px Arial';
         ctx.fillText('Score: ' + score, 20, 30);
     }
